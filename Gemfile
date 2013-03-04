@@ -72,3 +72,5 @@ gem "omniauth-facebook"
 group :assets do
   gem "handlebars_assets"
 end
+
+gem "newrelic_rpm"
