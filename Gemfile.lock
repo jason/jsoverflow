@@ -28,6 +28,8 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    acts-as-taggable-on (2.3.3)
+      rails (~> 3.0)
     addressable (2.3.3)
     annotate (2.5.0)
       rake
@@ -55,6 +57,7 @@ GEM
       xpath (~> 1.0.0)
     childprocess (0.3.9)
       ffi (~> 1.0, >= 1.0.11)
+    choice (0.1.6)
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -177,6 +180,11 @@ GEM
       activesupport (= 3.2.12)
       bundler (~> 1.0)
       railties (= 3.2.12)
+    rails-erd (1.1.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      choice (~> 0.1.6)
+      ruby-graphviz (~> 1.0.4)
     railties (3.2.12)
       actionpack (= 3.2.12)
       activesupport (= 3.2.12)
@@ -199,6 +207,7 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    ruby-graphviz (1.0.8)
     rubyzip (0.9.9)
     sass (3.2.6)
     sass-rails (3.2.6)
@@ -257,6 +266,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on
   annotate
   awesome_print
   better_errors
@@ -282,6 +292,7 @@ DEPENDENCIES
   pg
   pry-rails
   rails (= 3.2.12)
+  rails-erd
   rb-fsevent
   rspec-rails
   sass-rails (~> 3.2.3)
