@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130305020252) do
+ActiveRecord::Schema.define(:version => 20130305234135) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -83,6 +83,8 @@ ActiveRecord::Schema.define(:version => 20130305020252) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "display_name"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

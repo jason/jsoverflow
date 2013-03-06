@@ -1,6 +1,12 @@
 Jsoverflow::Application.routes.draw do
-  devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
-  #root to: questions#index
+  mount Mercury::Engine => '/'
+
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout", sign_up: 'signup'}
+  #controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+
+  resources :questions
+  root :to => 'questions#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

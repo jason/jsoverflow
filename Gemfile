@@ -4,7 +4,7 @@ gem 'rails', '3.2.12'
 gem 'acts-as-taggable-on'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'mercury-rails'
 
 
 
@@ -13,7 +13,7 @@ gem 'acts-as-taggable-on'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'zurb-foundation'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 

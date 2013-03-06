@@ -25,7 +25,7 @@ meetings.each do |attributes|
     end
 end
 
-resolutions = [
+questions = [
   {:title => "End Public Nudity", :body => "Lorem ipsum dolor sit amet, consectetur adipiscing 
     elit. Phasellus viverra, felis ut commodo sagittis, dui sem gravida ipsum, ac rhoncus tellus 
     lectus quis libero. Integer nec risus ligula. Cum sociis natoque penatibus et magnis dis 
